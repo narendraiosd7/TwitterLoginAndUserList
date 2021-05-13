@@ -89,18 +89,24 @@ class DashboardViewModel {
         request.httpMethod = "GET"
         
         URLSession.shared.dataTask(with: request) { data, response, error in
-            if error != nil {
+            if error == nil {
                 if let followersData = data as? AnyObject {
-                    do {
-                        let followersJSON = try JSONSerialization.data(withJSONObject: followersData, options: .prettyPrinted)
-                        let followers = try JSONDecoder().decode(Followers.self, from: followersJSON)
-                        self.usersData = followers.users ?? []
-                    }catch {
-                        print(error.localizedDescription)
+                    if let httpsResponse = response as? HTTPURLResponse {
+                        if httpsResponse.statusCode == 200 {
+                            do {
+                                let followersJSON = try JSONSerialization.data(withJSONObject: followersData, options: .prettyPrinted)
+                                let followers = try JSONDecoder().decode(Followers.self, from: followersJSON)
+                                self.usersData = followers.users ?? []
+                            }catch {
+                                print(error.localizedDescription)
+                            }
+                        } else {
+                            print(response?.description ?? "")
+                        }
                     }
-                } else {
-                    print(response ?? "")
                 }
+            } else {
+                print(error?.localizedDescription ?? "")
             }
             self.delegate?.getPresentListView()
         }.resume()
@@ -115,17 +121,21 @@ class DashboardViewModel {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             
-            if error != nil {
-                if let followingData = data as? AnyObject {
-                    do {
-                        let followingUsersJson = try JSONSerialization.data(withJSONObject: followingData, options: .prettyPrinted)
-                        let followingUsers = try JSONDecoder().decode(Followers.self, from: followingUsersJson)
-                        self.usersData = followingUsers.users ?? []
-                    }catch {
-                        print(error.localizedDescription)
+            if error == nil {
+                if let followeingData = data as? AnyObject {
+                    if let httpsResponse = response as? HTTPURLResponse {
+                        if httpsResponse.statusCode == 200 {
+                            do {
+                                let followingUsersJSON = try JSONSerialization.data(withJSONObject: followeingData, options: .prettyPrinted)
+                                let followingUsers = try JSONDecoder().decode(Followers.self, from: followingUsersJSON)
+                                self.usersData = followingUsers.users ?? []
+                            }catch {
+                                print(error.localizedDescription)
+                            }
+                        } else {
+                            print(response?.description ?? "")
+                        }
                     }
-                } else {
-                    print(error?.localizedDescription ?? "")
                 }
             } else {
                 print(error?.localizedDescription ?? "")
