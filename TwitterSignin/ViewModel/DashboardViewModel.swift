@@ -90,9 +90,9 @@ class DashboardViewModel {
         
         URLSession.shared.dataTask(with: request) { data, response, error in
             if error == nil {
-                if let followersData = data as? AnyObject {
-                    if let httpsResponse = response as? HTTPURLResponse {
-                        if httpsResponse.statusCode == 200 {
+                if let httpsResponse = response as? HTTPURLResponse {
+                    if httpsResponse.statusCode == 200 {
+                        if let followersData = data as? AnyObject {
                             do {
                                 let followersJSON = try JSONSerialization.data(withJSONObject: followersData, options: .prettyPrinted)
                                 let followers = try JSONDecoder().decode(Followers.self, from: followersJSON)
@@ -100,9 +100,9 @@ class DashboardViewModel {
                             }catch {
                                 print(error.localizedDescription)
                             }
-                        } else {
-                            print(response?.description ?? "")
                         }
+                    } else {
+                        print(response?.description ?? "")
                     }
                 }
             } else {
@@ -122,9 +122,10 @@ class DashboardViewModel {
         URLSession.shared.dataTask(with: request) { data, response, error in
             
             if error == nil {
-                if let followeingData = data as? AnyObject {
-                    if let httpsResponse = response as? HTTPURLResponse {
-                        if httpsResponse.statusCode == 200 {
+                if let httpsResponse = response as? HTTPURLResponse {
+                    if httpsResponse.statusCode == 200 {
+                        if let followeingData = data as? AnyObject {
+                            
                             do {
                                 let followingUsersJSON = try JSONSerialization.data(withJSONObject: followeingData, options: .prettyPrinted)
                                 let followingUsers = try JSONDecoder().decode(Followers.self, from: followingUsersJSON)
@@ -132,9 +133,9 @@ class DashboardViewModel {
                             }catch {
                                 print(error.localizedDescription)
                             }
-                        } else {
-                            print(response?.description ?? "")
                         }
+                    } else {
+                        print(response?.description ?? "")
                     }
                 }
             } else {
