@@ -1,0 +1,6 @@
+framework module Pods_TwitterSignin {
+  umbrella header "Pods-TwitterSignin-umbrella.h"
+
+  export *
+  module * { export * }
+}
