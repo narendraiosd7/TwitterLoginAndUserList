@@ -9,7 +9,4 @@ target 'TwitterSignin' do
   pod 'TwitterKit'
   pod 'SDWebImage'
   pod 'CryptoSwift'
-  pod 'Alamofire'
-  pod 'SwiftyJSON'
-  pod 'Swifter'
 end
