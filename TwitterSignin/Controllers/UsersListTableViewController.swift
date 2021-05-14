@@ -32,7 +32,6 @@ class UsersListTableViewController: UITableViewController {
         cell.profileImage.sd_setImage(with: url, placeholderImage: #imageLiteral(resourceName: "placeholder"), options: .retryFailed, context: nil)
         cell.userNameLabel.text = data?.name
         cell.userScreeNameLbel.text = data?.screenName
-        cell.userLocationLabel.text = data?.location
         return cell
     }
 

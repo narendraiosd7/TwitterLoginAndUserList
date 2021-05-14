@@ -217,12 +217,6 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hyderabad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kmL-aA-0fH">
-                                            <rect key="frame" x="290" y="99" width="84" height="21"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                            <nil key="textColor"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="rgG-2a-nIP" firstAttribute="leading" secondItem="yN3-H9-kgJ" secondAttribute="trailing" constant="20" id="4OO-nx-FM0"/>
@@ -230,15 +224,12 @@
                                         <constraint firstItem="rgG-2a-nIP" firstAttribute="top" secondItem="yN3-H9-kgJ" secondAttribute="top" id="UPL-ad-ibs"/>
                                         <constraint firstItem="yN3-H9-kgJ" firstAttribute="height" secondItem="Wpo-Ng-2PH" secondAttribute="height" multiplier="0.6" id="Yp7-22-tmN"/>
                                         <constraint firstItem="j06-eR-f9F" firstAttribute="leading" secondItem="rgG-2a-nIP" secondAttribute="leading" id="a7v-Ve-gMc"/>
-                                        <constraint firstAttribute="trailingMargin" secondItem="kmL-aA-0fH" secondAttribute="trailing" constant="20" id="kzO-4p-zGv"/>
                                         <constraint firstItem="yN3-H9-kgJ" firstAttribute="leading" secondItem="Wpo-Ng-2PH" secondAttribute="leading" constant="20" id="pGx-qn-OtV"/>
                                         <constraint firstItem="yN3-H9-kgJ" firstAttribute="centerY" secondItem="Wpo-Ng-2PH" secondAttribute="centerY" id="pHl-Fo-wyd"/>
-                                        <constraint firstItem="kmL-aA-0fH" firstAttribute="centerY" secondItem="j06-eR-f9F" secondAttribute="centerY" id="pdL-8C-jv4"/>
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
                                     <outlet property="profileImage" destination="yN3-H9-kgJ" id="iJa-f3-dYC"/>
-                                    <outlet property="userLocationLabel" destination="kmL-aA-0fH" id="8dc-EU-CJY"/>
                                     <outlet property="userNameLabel" destination="rgG-2a-nIP" id="BLL-zV-Tq0"/>
                                     <outlet property="userScreeNameLbel" destination="j06-eR-f9F" id="UHr-ri-0kK"/>
                                 </connections>

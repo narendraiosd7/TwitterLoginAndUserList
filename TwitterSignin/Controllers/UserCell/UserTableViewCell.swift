@@ -12,7 +12,6 @@ class UserTableViewCell: UITableViewCell {
     @IBOutlet weak var profileImage: UIImageView!
     @IBOutlet weak var userNameLabel: UILabel!
     @IBOutlet weak var userScreeNameLbel: UILabel!
-    @IBOutlet weak var userLocationLabel: UILabel!
     
     override func awakeFromNib() {
         super.awakeFromNib()
