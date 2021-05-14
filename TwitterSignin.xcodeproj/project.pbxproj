@@ -9,9 +9,9 @@
 /* Begin PBXBuildFile section */
 		C08A367267BB5EC938549258 /* Pods_TwitterSignin.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FF86AE411ECA59EBCB8AF34 /* Pods_TwitterSignin.framework */; };
 		DD537CA3264AE31000BDD325 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD537CA1264AE31000BDD325 /* LaunchScreen.storyboard */; };
+		DD6577B8264E366A0088B22F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD6577B7264E366A0088B22F /* Assets.xcassets */; };
 		DD8800DA264B91A2007172F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8800D8264B91A2007172F3 /* AppDelegate.swift */; };
 		DD8800DB264B91A2007172F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD8800D9264B91A2007172F3 /* SceneDelegate.swift */; };
-		DD8800DF264B91BF007172F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DD8800DE264B91BF007172F3 /* Assets.xcassets */; };
 		DD8800EC264B91FE007172F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DD8800E9264B91FE007172F3 /* Main.storyboard */; };
 		DD88010E264BBF50007172F3 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88010D264BBF50007172F3 /* LoginController.swift */; };
 		DD8801A0264BFDD4007172F3 /* Following.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD88019F264BFDD4007172F3 /* Following.swift */; };
@@ -32,9 +32,9 @@
 		DD537C93264AE30D00BDD325 /* TwitterSignin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TwitterSignin.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DD537CA2264AE31000BDD325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DD537CA4264AE31000BDD325 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD6577B7264E366A0088B22F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DD8800D8264B91A2007172F3 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DD8800D9264B91A2007172F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DD8800DE264B91BF007172F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../../Downloads/Twitter Login Demo/Twitter Login Demo/Assets.xcassets"; sourceTree = "<group>"; };
 		DD8800EA264B91FE007172F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DD88010D264BBF50007172F3 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		DD88019F264BFDD4007172F3 /* Following.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Following.swift; sourceTree = "<group>"; };
@@ -94,7 +94,7 @@
 				DDB2EE7C264CDF910069C751 /* ViewModel */,
 				DD88010C264BBF33007172F3 /* Controllers */,
 				DD8800E6264B91FE007172F3 /* StoryBoard */,
-				DD8800DE264B91BF007172F3 /* Assets.xcassets */,
+				DD6577B7264E366A0088B22F /* Assets.xcassets */,
 				DD537CA1264AE31000BDD325 /* LaunchScreen.storyboard */,
 				DD537CA4264AE31000BDD325 /* Info.plist */,
 				DDB2EE8B264D034F0069C751 /* Extentions.swift */,
@@ -228,7 +228,7 @@
 			files = (
 				DD537CA3264AE31000BDD325 /* LaunchScreen.storyboard in Resources */,
 				DD8800EC264B91FE007172F3 /* Main.storyboard in Resources */,
-				DD8800DF264B91BF007172F3 /* Assets.xcassets in Resources */,
+				DD6577B8264E366A0088B22F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
